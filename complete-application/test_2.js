@@ -1,10 +1,6 @@
 const test = require("tape");
 const fetchMock = require("fetch-mock");
 
-const applicationId = "e9fdb985-9173-4e01-9d73-ac2d60d1dc8e";
-const fusionUrl = "http://localhost:9011";
-const userPassword = "password";
-
 test("test lambda rejects sanctioned emails and accepts others", async function (t) {
   t.plan(2);
 
