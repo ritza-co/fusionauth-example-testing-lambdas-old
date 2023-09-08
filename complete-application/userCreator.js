@@ -4,9 +4,9 @@ createRandomUser(uuidv4());
 
 async function createRandomUser(
   userUUID,
-  applicationId,
-  fusionUrl,
-  userPassword
+  applicationId = "e9fdb985-9173-4e01-9d73-ac2d60d1dc8e",
+  fusionUrl = "http://localhost:9011",
+  userPassword = "password"
 ) {
   try {
     const randomEmail = new Date().getTime() + "@example.com";
